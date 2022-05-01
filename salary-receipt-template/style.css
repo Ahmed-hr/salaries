@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    margin: 5px 0;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 2.2fr;
+    border: 0.8px dashed black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: grid;
+    direction: rtl;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.title {
+    border: 0.8px black solid;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0 10px;
+    background-image: url("./DRA-blueburststonetexture-1-MBFT.jpg");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+}
+
+.emp-info {
+    font-size: 9px;
+    direction: rtl;
+    padding-top: 5px;
+}
+
+.pay-info {
+    font-size: 9px;
+    direction: rtl;
+}
+
+.payment {
+    font-size: 9px;
+    direction: rtl;
+    padding-top: 5px;
+
+}
+
+.date {
+    font-size: 9px;
+    direction: rtl;
+    padding-top: 10px;
+
+}
+
+.amount {
+    padding: 2px;
+    border: solid black 1px;
+    color: brown;
+}
+
+.autograph {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    direction: rtl;
+}
+
+.autograph > * {
+    text-align: center;
+    align-self: center;
+    font-size: 9px;
+
+}
+
+.payDate {
+    position: absolute;
+    direction: rtl;
+    top: 50px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 9px;
+    color: teal;
+}
+
+@media print {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
